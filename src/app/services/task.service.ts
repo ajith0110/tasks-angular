@@ -15,7 +15,13 @@ export class TaskService {
 
 
   listAllTasks(): Observable<Task[]> {
-    return of(TASKS)
+
+    const TASKS: any = localStorage.getItem('tasks')
+    const data = JSON.parse(TASKS)
+
+    console.log(typeof(data) );
+    
+    return of( Array(data))
   }
 
 }
