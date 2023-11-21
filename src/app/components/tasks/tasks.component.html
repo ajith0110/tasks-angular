@@ -1,0 +1,6 @@
+
+<div class="p-2">
+
+  <app-task *ngFor="let task of tasks"  [task]="task" (onDelete)="removeTask(task.id)"></app-task>
+
+</div>

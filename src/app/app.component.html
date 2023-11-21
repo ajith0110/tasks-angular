@@ -1,0 +1,12 @@
+<div class="container w-25 p-3">
+
+  <div class="d-flex  justify-content-between">
+    <h3>Tasks</h3>
+
+    <app-button title="Add" (btnClick)="onAdd()">
+    </app-button>
+  </div>
+  <app-add *ngIf="showAdd"></app-add>
+  <app-tasks></app-tasks>
+
+</div>
